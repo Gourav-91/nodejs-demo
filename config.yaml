@@ -1,0 +1,10 @@
+apiVersion: configmanagement.gke.io/v1
+kind: ConfigManagement
+metadata:
+  name: config-management
+spec:
+  git: 
+    syncRepo: https://github.com/Gourav-91/nodejs-demo.git
+    syncBranch: main
+    policyDir: manifests
+    syncWait: 15s
