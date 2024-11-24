@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sample-nodejs
+  namespace: prod
+spec:
+  replicas: 2
+  selector:
+    matchLabels: 
+      app: sample-nodejs
+  template:
+    metadata:
+      labels: 
+        app: sample-nodejs
+    spec: 
+      containers:
+        - name: sample-nodejs
+          image: gcr.io/eco-seeker-442609-p7/node-image-demo:v2
+          ports:
+            - containerPort: 3003 #do not change
