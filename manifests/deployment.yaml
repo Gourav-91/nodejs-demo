@@ -17,4 +17,4 @@ spec:
         - name: sample-nodejs
           image: gcr.io/eco-seeker-442609-p7/node-image-demo:v2
           ports:
-            - containerPort: 3003
+            - containerPort: 3003 #do not change
