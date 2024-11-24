@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: sample-nodejs-service
+  namespace: prod
+spec:
+  selector: 
+    app: sample-nodejs 
+  ports:
+    - protocol: TCP
+      port: 80
+      targetport: 3003 #don't chnge this port no
