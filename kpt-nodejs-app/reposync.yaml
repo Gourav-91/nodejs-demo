@@ -1,0 +1,8 @@
+spec:
+  applySpecVersion: v1alpha1  # Add this field to specify the version
+  sourceFormat: unstructured
+  git:
+    repo: https://github.com/Gourav-91/nodejs-demo.git
+    branch: main
+    dir: .
+    auth: none

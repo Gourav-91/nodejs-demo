@@ -4,8 +4,8 @@ metadata:
   name: sample-nodejs-service
   namespace: prod
 spec:
-  selector: 
-    app: sample-nodejs 
+  selector:
+    app: sample-nodejs
   ports:
     - port: 80
       targetPort: 3003 #don't chnge this port no
