@@ -1,0 +1,13 @@
+# apiVersion: configsync.gke.io/v1
+# kind: RepoSync
+# metadata:
+#   name: repo-sync
+#   namespace: prod
+spec:
+  applySpecVersion: v1alpha1
+  sourceFormat: unstructured
+  git:
+    repo: https://github.com/Gourav-91/nodejs-demo.git
+    branch: main
+    dir: kpt-nodejs-app/manifests/
+    auth: none

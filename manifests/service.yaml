@@ -7,6 +7,6 @@ spec:
   selector: 
     app: sample-nodejs 
   ports:
-    - protocol: TCP
-      port: 80
-      targetport: 3003 #don't chnge this port no
+    - port: 80
+      targetPort: 3003 #don't chnge this port no
+  type: LoadBalancer

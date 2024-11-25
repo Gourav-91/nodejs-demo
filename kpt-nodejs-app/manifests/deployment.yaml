@@ -6,13 +6,13 @@ metadata:
 spec:
   replicas: 2
   selector:
-    matchLabels: 
+    matchLabels:
       app: sample-nodejs
   template:
     metadata:
-      labels: 
+      labels:
         app: sample-nodejs
-    spec: 
+    spec:
       containers:
         - name: sample-nodejs
           image: gcr.io/eco-seeker-442609-p7/node-image-demo:v2
