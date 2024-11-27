@@ -4,5 +4,5 @@ spec:
   git:
     repo: https://github.com/Gourav-91/nodejs-demo.git
     branch: main
-    dir: .
+    dir: manifests/
     auth: none

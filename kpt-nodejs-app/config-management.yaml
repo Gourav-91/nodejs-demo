@@ -9,5 +9,5 @@ spec:
   git:
     repo: https://github.com/Gourav-91/nodejs-demo.git
     branch: main
-    dir: kpt-nodejs-app/manifests/
+    dir: manifests/
     auth: none
