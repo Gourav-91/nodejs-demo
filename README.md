@@ -12,8 +12,11 @@
     docker scout cves gcr.io/project-id/nodejs-demo:v1
 ```
 
-## Namespaces & Network Policies:
+## GKE cluster , Namespaces & Network Policies:
 ```
+  gcloud container clusters create nodejs-demo --num-nodes=2 --region=uscentral1-a
+```
+``` 
   kubectl create namespace dev
   kubectl create namespace prod
 ```
@@ -36,4 +39,8 @@ spec:
           name: prod
 ```
   
-      
+  ### [Secrets Management](https://github.com/Gourav-91/nodejs-demo/tree/main/secrets-management)
+  **Manage kubernets secrets using [External Secrets Operator(ESO)](https://external-secrets.io/v0.5.5/provider-google-secrets-manager/) to manage external secrets like vault, google secrets manager, Azure vault** 
+
+  > We have created a demo secret in gcp secret manager & it is being used inside the cluster "nodejs-demo" . We have created 2 defination files inside secret-management folder - external-secret.yaml & secret-store.yaml. By using this we can find the secret and use external secrets that we are looking for. By using this we are increasing the security of handling secrets. 
+
