@@ -44,3 +44,6 @@ spec:
 
   > We have created a demo secret in gcp secret manager & it is being used inside the cluster "nodejs-demo" . We have created 2 defination files inside secret-management folder - external-secret.yaml & secret-store.yaml. By using this we can find the secret and use external secrets that we are looking for. By using this we are increasing the security of handling secrets. 
 
+### KPT config sync:
+> KPT config sync is a tool for managing kubernets configuration that provides a higher-level abstraction and automation for deploying and synchronizing configuration resources across multiplr enviornments. Config sync is a GitOps solution for managing and syncing configuration manifests from a Git repository to a kubernets cluster.
+``` It follows Declarative approach , It has Centralized Management system, It allow us to manage root of the repository, env specific configurations such as dev,stage,prod and cluster specific configurations. Policy enforcement makes smoother by using config sync. ```
