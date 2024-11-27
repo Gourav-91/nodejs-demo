@@ -13,7 +13,7 @@ docker push gcr.io/project-id/nodejs-demo:v1
  > kubectl create namespace prod
 
  ** To restrict cross-namespace access in prod **
- '''
+ ```
  apiVerion: networking.k8s.io/v1
  kind: NetworkPolicy
  metadata:
@@ -28,6 +28,6 @@ spec:
     - namespaceSelector:
         matchLabels:
           name: prod
-'''
+```
   
       
