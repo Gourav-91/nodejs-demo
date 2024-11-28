@@ -1,0 +1,11 @@
+node_modules/*
+
+# Ignore Terraform files that get generated while using terraform locally
+.terraform
+.tfstate.backup
+.tfstate.backup.d
+*.dot
+
+
+# IDE specific files (e.g., VSCode, JetBrains)
+.vscode/
